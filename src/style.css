@@ -7,15 +7,15 @@
 }
 
 input {
-  border: 2px solid black;
-  border-radius: 10px;
+  border-radius: 8px;
   padding: 5px;
 }
 
 .container {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient();
+  background: linear-gradient(135deg #153677, #4e085f);
+  padding: 10px;
 }
 
 .todo-app {
@@ -23,10 +23,8 @@ input {
   max-width: 540px;
   background: #fff;
   margin: 100px auto 20px;
-}
-
-.todo-app h2 {
-  margin-bottom: 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
 }
 
 .row {
@@ -37,4 +35,27 @@ input {
   border-radius: 18px;
   padding-left: 18px;
   margin-bottom: 25px;
+}
+
+ul {
+  border: 1px solid pink;
+  border-radius: 6px;
+  padding: 16px;
+  width: 50%;
+  display: inline-block;
+}
+
+ul li::before {
+  content: "";
+}
+ul li {
+  list-style: none;
+  user-select: none;
+  position: relative;
+  padding: 12px 8px 12px 50px;
+}
+
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
 }

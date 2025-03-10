@@ -1,10 +1,21 @@
-body {
+* {
+  text-align: center;
+  margin: 0;
+  padding: 0;
   font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+input {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 5px;
 }
 
 .container {
   width: 100%;
   min-height: 100vh;
+  background: linear-gradient();
 }
 
 .todo-app {
